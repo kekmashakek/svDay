@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import LotteryWheel from "./LotteryWheel";
+import WinResult from "./WinResult";
+import s from './style.module.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [active, setActive] = useState(false)
+    return (
+        <div className={s.container}>
+            <h1 className={s.title}>one winning lottery</h1>
+            <LotteryWheel s={s} setActive={setActive} active={active}/>
+            <WinResult s={s} setActive={setActive} active={active}/>
+        </div>
+    )
+};
 
 export default App;

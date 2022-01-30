@@ -1,0 +1,108 @@
+body {
+    overflow: hidden;
+}
+.container {
+    min-height: 98vh;
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Neonderthaw';
+    color: hsl(3deg 100% 65%);
+    font-size: 35px;
+}
+
+.wheel_img {
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wheel_active {
+    animation: 4s ease wheel_active forwards;
+}
+
+@keyframes wheel_active {
+    0% {
+        transform: rotateZ(0) scale(1);
+    }
+    85% {
+        transform: rotateZ(1000deg) scale(1.05);
+    }
+    99% {
+        transform: rotateZ(1500deg) scale(0);
+    }
+    100% {
+        transform: rotateZ(1500deg) scale(0);
+    }
+}
+
+.results_wrapper {
+    position: absolute;
+}
+
+.results {
+    display: none;
+}
+
+.results_active {
+    animation: 1s ease result_active forwards;
+    animation-delay: 3.5s;
+    transform: scale(0);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid #d2d2d2;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.win_result_img {
+    max-width: 400px;
+}
+
+.results_wrapper > * {
+    font-family: 'Roboto';
+}
+
+.text {
+    max-width: 380px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.congratulation {
+    padding: 10px 20px;
+    font-family: 'Roboto';
+    display: flex;
+    margin: 10px auto 10px;
+    background: hsl(27deg 100% 70%);
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.congratulation:hover {
+    background: hsl(27, 97%, 65%);
+}
+
+@keyframes result_active {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
