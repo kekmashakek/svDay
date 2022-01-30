@@ -11,7 +11,7 @@ const WinResult = ({s, setActive, active}) => (
             </div>
             <div className={s.text}>Вы выиграли страстную ночь с самой красивой женщиной...</div>
             <img className={s.win_result_img} src={airbnb} alt=""/>
-            <div className={s.text}>Вы первый обалдатель данного приза. Это самый крупный выигрыш за всю историю нашей
+            <div className={s.text}>Вы первый обладатель данного приза. Это самый крупный выигрыш за всю историю нашей
                 лотереи.
             </div>
             <button onClick={()=> setActive(false)} className={s.congratulation}>Поздравляем!</button>
