@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/svDay/static/css/main.5522c8fe.css",
+    "main.js": "/svDay/static/js/main.cb8cb252.js",
+    "static/media/airbnb.png": "/svDay/static/media/airbnb.4840c3dfcbeec2aa4256.png",
+    "static/media/KH_B8.png": "/svDay/static/media/KH_B8.808d64a864b02adf182a.png",
+    "index.html": "/svDay/index.html",
+    "main.5522c8fe.css.map": "/svDay/static/css/main.5522c8fe.css.map",
+    "main.cb8cb252.js.map": "/svDay/static/js/main.cb8cb252.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5522c8fe.css",
+    "static/js/main.cb8cb252.js"
+  ]
+}
